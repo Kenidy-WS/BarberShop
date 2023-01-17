@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/fav-icon.png" type="image/x-icon">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menu-opener").addEventListener("click", function () {
+                if (document.querySelector("nav").style.display == 'flex') {
+                    document.querySelector("nav").style.display = 'none';
+                }
+                else {
+                    document.querySelector("nav").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
+    <title>Barber Shop</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="./assets/images/icon.png" alt="barber-icon">
+                    <h1>Barber Shop</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#barbers">Barbeiros</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#prices">Preços</a></li>
+                        <li><a href="#galery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-mobile">
+                    <img src="./assets/images/burger-bar.png" class="menu-opener" alt="menu">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner--content">
+                <div class="banner-content-left">
+                    <h1>Barbearia - sua <br>ATMOSFERA MASCULINA!</h1>
+                    <p>Fazendo barba, cabelo e amigos.</p>
+                    <a class="button" href="">Agende agora</a>
+                </div>
+                <div class="banner-content-right">
+                    <a href="https://contate.me/kenidy-ws"><img class="whatsapp-icon" src="./assets/images/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section barbeiros -->
+        
+        <section class="section-default barbers" id="barbers">
+            <div class="section-default--content">
+                <div class="section-title">
+                    Barbeiros
+                </div>
+                <div class="section-body">
+                    <div class="sliders">
+                        <div class="slider barber1">
+                            <div class="slider-area">
+                                <div class="name-barber">
+                                    <h2>Denys</h2>
+                                    <img src="./assets/images/estrelas.png" alt="estrelas">
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, non!</p>
+                            </div>
+                        </div>
+                        <div class="slider barber2">
+                            <div class="slider-area">
+                                <div class="name-barber">
+                                    <h2>Luiz</h2>
+                                    <img src="./assets/images/estrelas.png" alt="estrelas">
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, non!</p>
+                            </div>
+                        </div>
+                        <div class="slider barber3">
+                            <div class="slider-area">
+                                <div class="name-barber">
+                                    <h2>João</h2>
+                                    <img src="./assets/images/estrelas.png" alt="estrelas">
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, non!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section serviços -->
+
+        <section class="section-default services" id="services">
+            <div class="section-default--content">
+                <div class="section-title">
+                    Serviços
+                </div>
+                <div class="section-body">
+                    <div class="sliders-services">
+                        <div class="service-slider barber">
+                            <img src="./assets/images/barba icon1.png" alt="corte-barba">
+                            <h2>Barba</h2>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, aliquid.</span>
+                        </div>
+                        <div class="service-slider hair">
+                            <img src="./assets/images/hair icon.png " alt="corte-cabelo">
+                            <h2>Cabelo</h2>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, aliquid.</span>
+                        </div>
+                        <div class="service-slider hidrate">
+                            <img src="./assets/images/hair-cutting.png" alt="Hidratação">
+                            <h2>Hidratação</h2>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, aliquid.</span>
+                        </div>
+                        <div class="service-slider Sombrancelha">
+                            <img src="./assets/images/sombracelha.png" alt="combo">
+                            <h2>Combo</h2>
+                            <span>Barba, cabelo e Hidratação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- teste preços -->
+
+        <section class="section-default prices" id="prices">
+            <div class="section-default--content">
+                <div class="section-title">
+                    Preços
+                </div>
+                <div class="section-body">
+                    <div class="default-areas">
+                        <div class="price-area">
+                            <p><img src="./assets/images/razor.png" alt="">Corte social 20,00 R$</p>
+                            <p><img src="./assets/images/razor.png" alt="">Corte degradê 25,00 R$</p>
+                            <p><img src="./assets/images/razor.png" alt="">Barba 15,00 R$</p>
+                            <p><img src="./assets/images/razor.png" alt="">Hidratação 15,00 R$</p>
+                            <p><img src="./assets/images/razor.png" alt="">Combo Barba/Cabelo e Hidratação 45,00
+                                R$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- galeria -->
+
+        <section class="section-default galery" id="galery">
+            <div class="section-title">
+                Galeria
+            </div>
+            <div class="principal">
+                <div class="galeria">
+                    <figure class="item-galeria item1">
+                        <img src="./media/cut5.jpg" alt="" class="img-galeria">
+                    </figure>
+                    <figure class="item-galeria item2">
+                        <img src="./media/cut2.jpg" alt="" class="img-galeria">
+
+                    </figure>
+                    <figure class="item-galeria item3">
+                        <img src="./media/cut3.jpg" alt="" class="img-galeria">
+                    </figure>
+                    <figure class="item-galeria item4">
+                        <img src="./media/cut1.jpg" alt="" class="img-galeria">
+                    </figure>
+                    <figure class="item-galeria item5">
+                        <img src="./media/cut4.jpg" alt="" class="img-galeria">
+                    </figure>
+                    <figure class="item-galeria item6">
+                        <img src="./media/cut6.jpg" alt="" class="img-galeria">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- sobre -->
+
+        <section class="section-default about-us" id="about">
+            <div class="section-default--content">
+                <div class="section-title">
+                    Sobre Nós
+                </div>
+                <div class="section-body">
+                    <div class="default-area">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed voluptatem eligendi?
+                            Autem
+                            quos
+                            aut explicabo, dolores rem consequuntur error expedita nulla unde neque amet perferendis
+                            quidem
+                            facilis harum laudantium!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-areas">
+            <div class="footer-area">
+                <div class="locate">
+                    <address>
+                        <img src="./assets/images/locate-icon.png" alt="Localização">
+                        Rua das palmeiras, 987 <br>
+                        Centro <br>
+                        Araputanga - MT
+                    </address>
+                </div>
+            </div>
+            <div class="footer-area copy">
+                <h1>BARBER SHOP</h1> <br>
+                <span>© Desenvolvido por Kenidy W.S </span>
+            </div>
+            <div class="footer-area social" id="contact">
+                <h2>Contatos</h2>
+                <div class="social">
+                    <a href="https://www.instagram.com/kenidy.ws/"> <img src="./assets/images/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://contate.me/kenidy-ws"><img src="./assets/images/whatsapp.png" alt="whatsapp"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066709330995&mibextid=ZbWKwL"><img class="fb"
+                            src="./assets/images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
